@@ -19,6 +19,10 @@ fs.readFile('baby-names.csv', function(err, data) {
             count: parseInt(pieceOfData[4]),
             rank: parseInt(pieceOfData[5]),
         }
-    });
+    }).sort(function(a, b) {
+        if (a.count > a.count) return 1
+        if (a.count < a.count) return -1
+        if (a.count === a.count) return 0
+    })
     console.log(result[0]);
 })
