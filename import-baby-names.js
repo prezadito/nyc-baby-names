@@ -9,5 +9,5 @@ fs.readFile('baby-names.csv', function(err, data) {
     }
     var parsedData = data.toString('utf-8');
 
-    console.log(parsedData);
+    console.log(parsedData.split('\n'));
 })
